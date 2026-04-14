@@ -1,0 +1,15 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  padding: 15px;
+  display: grid;
+  justify-items: center;
+  background-color: rgb(66, 66, 66);
+}
+
+header button {
+  padding: 15px;
+}
