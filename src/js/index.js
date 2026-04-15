@@ -23,9 +23,15 @@ menuBtn.addEventListener("click", () => {
 const contactBtn = document.getElementById("contact-btn");
 contactBtn.addEventListener("click", () => {
   updatePageContent("Contact", [
-    createCard(null, "(12) 34567-8901", contactImg),
-    createCard(null, "@PrettyBakery", instagramImg),
-    createCard(null, "prettyBakery@PrettyEmail.net", emailImg),
+    createCard(null, "(12) 34567-8901", contactImg, "contact Img", "small no-border-radius"),
+    createCard(null, "@PrettyBakery", instagramImg, "instagram Icon", "small no-border-radius"),
+    createCard(
+      null,
+      "prettyBakery@PrettyEmail.net",
+      emailImg,
+      "email Img",
+      "small no-border-radius",
+    ),
   ]);
 });
 
@@ -42,7 +48,13 @@ function updatePageContent(title = null, elements = []) {
   });
 }
 
-function createCard(title = null, desc = null, imgPath = null, imgAlt = null) {
+function createCard(
+  title = null,
+  desc = null,
+  imgPath = null,
+  imgAlt = null,
+  imgClasses = "",
+) {
   const cardEl = document.createElement("div");
   cardEl.id = "card";
 
@@ -59,6 +71,7 @@ function createCard(title = null, desc = null, imgPath = null, imgAlt = null) {
     const imgEl = document.createElement("img");
     imgEl.src = imgPath;
     imgEl.alt = imgAlt;
+    imgEl.className = imgClasses;
     contentEl.appendChild(imgEl);
   }
 

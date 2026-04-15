@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url('../assets/font/Roboto-Regular.ttf');
+  src: url("../assets/font/Roboto-Regular.ttf");
 }
 
 :root {
@@ -13,8 +13,20 @@
   --default-gap: 15px;
 }
 
-body{
-  font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+body {
+  font-family:
+    "Roboto",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   height: 100vh;
   display: grid;
 
@@ -38,8 +50,8 @@ footer {
   text-align: center;
 }
 
-footer>a:visited{
-  position: ;
+footer > a:visited {
+  position:;
   color: white;
   text-decoration: none;
 }
@@ -71,4 +83,13 @@ footer>a:visited{
   height: 200px;
   width: 200px;
   border-radius: 25px;
+}
+
+#card img.small {
+  height: 50px;
+  width: 50px;
+}
+
+#card img.no-border-radius{
+    border-radius: 0px;
 }
