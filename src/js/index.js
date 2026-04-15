@@ -1,8 +1,7 @@
 import "../css/style.css";
 import prettyCakeImg from "../assets/img/pretty-cake.jpg";
-import { div } from "three/tsl";
 
-//setup header
+updatePageContent("Home", [createCard(null, null, prettyCakeImg)]);
 
 const homeBtn = document.getElementById("home-btn");
 homeBtn.addEventListener("click", () => {

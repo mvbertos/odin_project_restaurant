@@ -19,6 +19,17 @@ header button {
   padding: 15px;
 }
 
+footer {
+  background-color: rgb(66, 66, 66);
+  color: white;
+  text-align: center;
+}
+
+footer>a:visited{
+  color: white;
+  text-decoration: none;
+}
+
 #content {
   background-color: rgb(246, 255, 194);
   display: grid;
@@ -39,7 +50,6 @@ header button {
   grid-template-columns: min-content 1fr;
   gap: var(--default-gap);
 }
-
 
 #card img {
   height: 200px;
