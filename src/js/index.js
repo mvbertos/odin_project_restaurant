@@ -1,5 +1,8 @@
 import "../css/style.css";
 import prettyCakeImg from "../assets/img/pretty-cake.jpg";
+import dish01 from "../assets/img/dish_01.png";
+import dish02 from "../assets/img/dish_02.png";
+import dish03 from "../assets/img/dish_03.png";
 import contactImg from "../assets/img/contact.png";
 import instagramImg from "../assets/img/instagram.png";
 import emailImg from "../assets/img/e-mail.png";
@@ -8,23 +11,35 @@ updatePageContent("Home", [createCard(null, null, prettyCakeImg)]);
 
 const homeBtn = document.getElementById("home-btn");
 homeBtn.addEventListener("click", () => {
-  updatePageContent("Home", [createCard(null, null, prettyCakeImg)]);
+  updatePageContent("Home", [createCard(null, null, null)]);
 });
 
 const menuBtn = document.getElementById("menu-btn");
 menuBtn.addEventListener("click", () => {
   updatePageContent("Menu", [
-    createCard("Moka", null, prettyCakeImg),
-    createCard("Cake", null, prettyCakeImg),
-    createCard("Pretty Bread", null, prettyCakeImg),
+    createCard("Moka", null, dish01, "", "pixelated medium"),
+    createCard("Cake", null, dish02, "", "pixelated medium"),
+    createCard("Pretty Bread", null, dish03, "", "pixelated medium"),
   ]);
 });
 
 const contactBtn = document.getElementById("contact-btn");
 contactBtn.addEventListener("click", () => {
   updatePageContent("Contact", [
-    createCard(null, "(12) 34567-8901", contactImg, "contact Img", "small no-border-radius"),
-    createCard(null, "@PrettyBakery", instagramImg, "instagram Icon", "small no-border-radius"),
+    createCard(
+      null,
+      "(12) 34567-8901",
+      contactImg,
+      "contact Img",
+      "small no-border-radius",
+    ),
+    createCard(
+      null,
+      "@PrettyBakery",
+      instagramImg,
+      "instagram Icon",
+      "small no-border-radius",
+    ),
     createCard(
       null,
       "prettyBakery@PrettyEmail.net",

@@ -77,7 +77,7 @@ footer > a:visited {
 #card > div {
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: min-content 1fr;
+  grid-template-columns: repeat(auto, min-content);
   gap: var(--default-gap);
   align-items: center;
 }
@@ -93,8 +93,19 @@ footer > a:visited {
   width: 50px;
 }
 
+#card img.medium {
+  height: 100px;
+  width: 100px;
+}
+
 #card img.no-border-radius {
   border-radius: 0px;
+}
+
+#card img.pixelated {
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -webkit-optimize-contrast; /* Safari */
+  image-rendering: pixelated; /* Chrome/Edge */
 }
 
 .background-pattern {
