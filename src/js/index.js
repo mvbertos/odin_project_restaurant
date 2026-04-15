@@ -7,19 +7,49 @@ import contactImg from "../assets/img/contact.png";
 import instagramImg from "../assets/img/instagram.png";
 import emailImg from "../assets/img/e-mail.png";
 
-updatePageContent("Home", [createCard(null, null, prettyCakeImg)]);
+ updatePageContent("Home", [
+    createCard(
+      null,
+      "A really nice place for you to visit when you passing by SomeWhere City! Come to taste special Grilled Cheese and Pretty Cake(copyrighted by me). I assure you a magnificent experience!",
+      null,
+    ),
+  ]);
 
 const homeBtn = document.getElementById("home-btn");
 homeBtn.addEventListener("click", () => {
-  updatePageContent("Home", [createCard(null, null, null)]);
+  updatePageContent("Home", [
+    createCard(
+      null,
+      "A really nice place for you to visit when you passing by SomeWhere City! Come to taste special Grilled Cheese and Pretty Cake(copyrighted by me). I'm assure you a magnificent experience!",
+      null,
+    ),
+  ]);
 });
 
 const menuBtn = document.getElementById("menu-btn");
 menuBtn.addEventListener("click", () => {
   updatePageContent("Menu", [
-    createCard("Moka", null, dish01, "", "pixelated medium"),
-    createCard("Cake", null, dish02, "", "pixelated medium"),
-    createCard("Pretty Bread", null, dish03, "", "pixelated medium"),
+    createCard(
+      "Pink Cake",
+      "A pink cake that tastes like sugar, my grandmother tought me how to do it back when I was 10, and every single time it taske more like sugar, and gets pinkier for some reason.",
+      dish01,
+      "",
+      "pixelated medium",
+    ),
+    createCard(
+      "Pudding",
+      "I really dislike Pudding, I tried once when I was a kid and I really thought that was the worst desert to exist on earth, but my mother said I am great doing it, so why not to recommend here on my menu!",
+      dish02,
+      "",
+      "pixelated medium",
+    ),
+    createCard(
+      "Pretty Cake",
+      "My specialty, I don't really know what I put on it to be so great, but is the best dish on my menu so far! This one is my suggestion for all of those who wants the best of my cooking menu.",
+      dish03,
+      "",
+      "pixelated medium",
+    ),
   ]);
 });
 
