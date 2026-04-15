@@ -64,6 +64,7 @@ footer>a:visited{
   grid-auto-flow: column;
   grid-template-columns: min-content 1fr;
   gap: var(--default-gap);
+  align-items: center;
 }
 
 #card img {

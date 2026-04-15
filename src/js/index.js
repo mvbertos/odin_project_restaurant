@@ -1,5 +1,8 @@
 import "../css/style.css";
 import prettyCakeImg from "../assets/img/pretty-cake.jpg";
+import contactImg from "../assets/img/contact.png";
+import instagramImg from "../assets/img/instagram.png";
+import emailImg from "../assets/img/e-mail.png";
 
 updatePageContent("Home", [createCard(null, null, prettyCakeImg)]);
 
@@ -20,9 +23,9 @@ menuBtn.addEventListener("click", () => {
 const contactBtn = document.getElementById("contact-btn");
 contactBtn.addEventListener("click", () => {
   updatePageContent("Contact", [
-    createCard(null, "(12) 34567-8901", prettyCakeImg),
-    createCard(null, "@PrettyBakery", prettyCakeImg),
-    createCard(null, "prettyBakery@PrettyEmail.net", prettyCakeImg),
+    createCard(null, "(12) 34567-8901", contactImg),
+    createCard(null, "@PrettyBakery", instagramImg),
+    createCard(null, "prettyBakery@PrettyEmail.net", emailImg),
   ]);
 });
 
