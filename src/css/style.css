@@ -14,6 +14,7 @@
 }
 
 body {
+  background-color: rgb(238, 186, 108);
   font-family:
     "Roboto",
     system-ui,
@@ -41,24 +42,26 @@ header {
 }
 
 header button {
+  width: 100px;
+  border: none;
+  border-radius: 20px;
   padding: 15px;
 }
 
 footer {
-  background-color: rgb(66, 66, 66);
+  background-color: black;
   color: white;
   text-align: center;
 }
 
 footer > a:visited {
-  position:;
   color: white;
   text-decoration: none;
 }
 
 #content {
   height: min-content;
-  background-color: rgb(246, 255, 194);
+  background-color: rgb(255, 212, 146);
   display: grid;
   margin-left: 10%;
   margin-right: 10%;
@@ -90,6 +93,13 @@ footer > a:visited {
   width: 50px;
 }
 
-#card img.no-border-radius{
-    border-radius: 0px;
+#card img.no-border-radius {
+  border-radius: 0px;
+}
+
+.background-pattern {
+  background-image: url("../assets/img/pattern_02.jpg");
+  background-repeat: repeat;
+  background-size: 300px;
+  filter: grayscale(100%);
 }
